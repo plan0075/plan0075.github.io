@@ -1,0 +1,37 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#aad4cf;
+}
+
+.wrapper{
+    width: 1024px;
+    margin: auto;
+
+    background-color: #d4e9e7;
+}
+/* CSS for header, background image is wide starfish image. Aligns text to center*/
+.title_box{
+    margin-top: 0px;
+    width: 1024px;
+    height: 341px;
+    font-size: 1.5rem;
+   background-image:url("../images/lone-starfish-wide.jpg");
+   background-repeat: no-repeat;
+   text-align: center;
+   color: white;
+
+}
+
+
+/*Adjusts position of title text within header, uses class for specificity, in case the website has other pages, does not override position of their text.*/
+.header_title{
+    font-weight: normal;
+    position: relative;
+    top: 200px;
+}
+
+.clearfix::after{
+	content:"";
+	display:block;
+	clear:both;
+}
