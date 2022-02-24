@@ -29,9 +29,42 @@ html{
     position: relative;
     top: 200px;
 }
+nav ul{
+    list-style: none;
+}
+nav li{
+    float: left;
+    padding: 0px;
+    
+    
+}
+nav a{
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding-left: 120px;
+    padding-right: 100px;
+  
+    
 
+}
+
+nav li:nth-child(2){
+    border-left: 1px;
+    border-right: 1px;
+    border-style: solid;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-color: slategray;
+}
+.navigation{
+    width: 1024px;
+    text-align: center;
+
+}
 .clearfix::after{
 	content:"";
 	display:block;
 	clear:both;
 }
+
