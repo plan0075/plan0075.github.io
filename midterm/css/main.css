@@ -28,15 +28,18 @@ html{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/*removes styling from navigation*/
 nav ul{
     list-style: none;
 }
+/*Sets up float for navigation*/
 nav li{
     float: left;
     padding: 0px;
     
     
 }
+/*Adds spacing to navigation text*/
 nav a{
     color: black;
     display: block;
@@ -47,10 +50,12 @@ nav a{
     padding-bottom: 10px;   
 
 }
+/*hover state for navigation links, not required but adds visual clarity*/
 nav a:hover{
-    color: slategray;
+    color:  slategray;
+    background-color: darkslategray;
 }
-
+/*Sets border for navigation list*/
 nav li:nth-child(2){
     border-left: 1px;
     border-right: 1px;
@@ -92,6 +97,8 @@ section div h1{
 .contact_area{
     margin: 10px;
 }
+
+/* sets border and other visual formatting for the box around contact form*/
 .contact_box{
     border-style: solid;
     border-color: black;
@@ -99,24 +106,22 @@ section div h1{
     padding: 25px;
     font-size: 1.25rem;
 }
+/*sets size of smaller textboxes*/
 .textbox_small{
     width: 955px;
     height: 25px;
 }
-
+/*sets size of larger textbox*/
 .textbox_large{
     width: 955px;
     height: 90px;
     vertical-align: top;
 }
-input{
-    text-align: left;
-}
-
+/*visual formatting for button*/
 button{
     padding:15px;   
 }
-
+/*font formatting for footer text*/
 .footer_area{
     text-align: right;
     padding: 20px;
