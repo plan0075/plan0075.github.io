@@ -6,6 +6,7 @@ html{
 .wrapper{
     width: 1024px;
     margin: auto;
+    margin-top: 0px;
 
     background-color: #d4e9e7;
 }
@@ -15,19 +16,17 @@ html{
     width: 1024px;
     height: 341px;
     font-size: 1.5rem;
-   background-image:url("../images/lone-starfish-wide.jpg");
-   background-repeat: no-repeat;
-   text-align: center;
    color: white;
 
 }
 
-
 /*Adjusts position of title text within header, uses class for specificity, in case the website has other pages, does not override position of their text.*/
 .header_title{
     font-weight: normal;
-    position: relative;
-    top: 200px;
+    position: absolute;
+    top:20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 nav ul{
     list-style: none;
@@ -42,8 +41,10 @@ nav a{
     color: black;
     display: block;
     text-decoration: none;
-    padding-left: 120px;
-    padding-right: 100px;
+    padding-left: 125px;
+    padding-right: 125px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   
     
 
@@ -62,9 +63,34 @@ nav li:nth-child(2){
     text-align: center;
 
 }
+section div h1{
+    padding-left: 15px;
+}
+/*Modifies font for the main text area under "Life of a starfish"*/
+.main_content{
+    font-size: 1.025rem;
+    margin: 10px;
+}
+/*Sets text wrapping for smaller image in main content*/
+.image_left{
+    float: left;
+    max-width: 20%;
+    max-height: 20%;
+    padding-left: 05px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+}
+/*Clearfix code for float declarations*/
 .clearfix::after{
 	content:"";
 	display:block;
 	clear:both;
 }
-
+/*Sets margins to the contact section*/
+.contact_area{
+    margin: 10px;
+}
+.contact_box{
+    
+}
