@@ -44,10 +44,11 @@ nav a{
     padding-left: 125px;
     padding-right: 125px;
     padding-top: 10px;
-    padding-bottom: 10px;
-  
-    
+    padding-bottom: 10px;   
 
+}
+nav a:hover{
+    color: slategray;
 }
 
 nav li:nth-child(2){
