@@ -19,6 +19,10 @@ html{
    color: white;
 
 }
+/*text padding for sub headers*/
+h2{
+    padding:10px;
+}
 
 /*Adjusts position of title text within header, uses class for specificity, in case the website has other pages, does not override position of their text.*/
 .header_title{
@@ -27,6 +31,11 @@ html{
     top:20%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.navlist{
+    font-size: 1.25em;
+    font-weight: 700;
 }
 /*removes styling from navigation*/
 nav ul{
