@@ -56,7 +56,7 @@ nav li:nth-child(2){
     border-style: solid;
     border-top: 0px;
     border-bottom: 0px;
-    border-color: slategray;
+    border-color: black;
 }
 .navigation{
     width: 1024px;
@@ -92,5 +92,31 @@ section div h1{
     margin: 10px;
 }
 .contact_box{
-    
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 25px;
+    font-size: 1.25rem;
+}
+.textbox_small{
+    width: 955px;
+    height: 25px;
+}
+
+.textbox_large{
+    width: 955px;
+    height: 90px;
+    vertical-align: top;
+}
+input{
+    text-align: left;
+}
+
+button{
+    padding:15px;   
+}
+
+.footer_area{
+    text-align: right;
+    padding: 20px;
 }
