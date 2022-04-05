@@ -6,8 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTM6130 Final Project - Plan0075</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/5ba54ca48b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Github test</h1>
+    <div class="wrapper">
+        <header id="home" class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <form action="index.html" method="get">
+                    <input type="text" name="searchbar" id="searchbar" class="searchbar" value="Search">
+                </form>
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            </nav>
+        </header>
+        <!--Creates section for Title box uses image h1 and paragraphs-->
+        <section class="title-box">
+           <img src="images/main-banner.jpg" alt="picture of office space"> 
+           <div class="title-text">     
+                <h1>Welcome to Three star media</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat dignissimos est sed id voluptatum reprehenderit. Sequi laborum aperiam eos, velit reprehenderit ipsam totam unde illum maxime iure voluptatum maiores labore?</p>
+                <button type="submit">Connect with us <i class="fa-solid fa-caret-right"></i></button>
+            </div>
+        </section>
+        <!--Section for about content, splt into divs for potential grid layout with CSS for desktop size-->
+        <section class="about"> 
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about-us.jpg" alt="picture of a ping pong table in an office">
+                </div>
+                <div>
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit quisquam maiores doloribus dolor magnam reprehenderit ad nisi, culpa autem explicabo accusantium quae tempore eligendi repudiandae quos? Incidunt aut et voluptas?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci ex voluptas est velit cupiditate necessitatibus nisi aspernatur placeat. Perspiciatis voluptates mollitia ipsa eum modi, exercitationem dolorum non sint voluptate dolores!</p>
+                </div>
+            </div>
+        </section>
+        <section class="map-box">
+            <h2>Location</h2>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944551804537!2d-75.757125484219!3d45.34993154908148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1649126352241!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+    </div>
 </body>
 </html>
