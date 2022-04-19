@@ -38,10 +38,10 @@
         
             <!--Creates section for Title box uses image h1 and paragraphs-->
             <div class="title-box">
-                <div class="title-image">
+                <div class="title-image title-grid">
                     <img src="images/main-banner.jpg" alt="picture of office space"> 
                 </div>
-                <div class="title-text">     
+                <div class="title-text title-grid">     
                     <h1>Welcome to Three Star Media</h1>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat dignissimos est sed id voluptatum reprehenderit. Sequi laborum aperiam eos, velit reprehenderit ipsam totam unde illum maxime iure voluptatum maiores labore?</p>
                     <button type="submit">Connect with us <i class="fa-solid fa-caret-right"></i></button>
@@ -122,10 +122,18 @@
             </section>
             <section>
                 <div class="vision-area">
-                    <img src="images/vision.jpg" alt="picture of paper boats on a solid surfaceS">
-                    <h3>Our Vision</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit quisquam maiores doloribus dolor magnam reprehenderit ad nisi, culpa autem explicabo accusantium quae tempore eligendi repudiandae quos? Incidunt aut et voluptas?</p>
-                    <button type="submit">Learn More<i class="fa-solid fa-caret-right"></i></button>
+                    <div class="vision-grid">
+                        <img src="images/vision.jpg" alt="picture of paper boats on a solid surfaceS">
+                    </div>
+                    <div class="vision-grid">
+                        <h3>Our Vision</h3>
+                    </div>
+                    <div class="vision-grid">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit quisquam maiores doloribus dolor magnam reprehenderit ad nisi, culpa autem explicabo accusantium quae tempore eligendi repudiandae quos? Incidunt aut et voluptas?</p>
+                    </div>
+                    <div class="vision-grid">
+                        <button type="submit">Learn More<i class="fa-solid fa-caret-right"></i></button>
+                    </div>
                 </div>
             </section>
             <!--Section for team, divided similarily as above into seperate divs for organizaiton with CSS-->
@@ -163,20 +171,28 @@
                         <!--Form for inputs-->
                         <form action="index.html" method="get">
                         <!--Divs for text boxes-->
-                        <div>
+                        <div class="contact-content">
                             <label for="name">Full Name</label>
+                            
+                        </div>
+                        <div class="contact_content">
                             <input type="text" name="name" id="name" class="textbox_small">
                         </div>
-                        <div>
+                        <div class="contact-content">
                             <label for="email">Email</label>
+                        </div>
+                        <div class="contact_content">
                             <input type="text" name="email" id="email" class="textbox_small">
                         </div>
-                        <div>
+                        <div class="contact-content">
                             <label for="message">Message</label>
-                            <textarea name="message" id="message" class="textbox_large"></textarea> 
+                             
+                        </div>
+                        <div class="contact_content">
+                            <textarea name="message" id="message" class="textbox_large"></textarea>
                         </div>                       
                         <!--Button for submitting-->
-                        <div>
+                        <div class="contact-content">
                             <button type="submit">Send</button>
                         </div>       
                         </form>
@@ -209,7 +225,7 @@
             </section>
             <!--Google maps embed, size removed to format in CSS-->
             <section class="map-box">
-                <h2>Location</h2>
+                <h3>Location</h3>
                 <div class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944551804537!2d-75.757125484219!3d45.34993154908148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1649126352241!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>

@@ -119,18 +119,23 @@ nav form button{
 }
 
 
-
+/* transparent background for title text. found using w3 schools for color transparency. Article titled "Image transparency"*/
+.title-box{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.title-box .title-grid:nth-child(1){
+    grid-column: 1/3;
+    grid-row: 1/4;
+}
+.title-box .title-grid:nth-child(2){
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
 .title-text{
     background: rgba(34, 34, 34, 0.75);
     color: white;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    max-height: 300px;
-    padding: 50px;
-    margin: 25px;
 }
 .title-text p{
     margin: 25px;
@@ -294,12 +299,62 @@ nav form button{
     font-size: 1.25rem;
 }
 
+.vision-area{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:90px 80px 90px;
+    color: white;
+}
+.vision-area img{
+    width: 100%;
+    height: 300px;
+}
+.vision-area button{
+    width: 175px;
+    height: 75px;
+    background: rgba(34, 34, 34, 0.75);
+    color: white;
+    font-size: 1.25rem;
+    border-style: solid;
+    border-color: #c78c06;
+    border-width: 1px;
+    margin: 10px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+.vision-area h3{
+    margin: 10px;
+    padding-top: 20px;
+}
+.vision-area p{
+    margin: 10px;
+}
 
+.vision-area .vision-grid:nth-child(1){
+    grid-row:1/4;
+    grid-column:1/4;
+}
+.vision-area .vision-grid:nth-child(2){
+    grid-row:1/4;
+    grid-column:1/4;
+    height: 30px;
+}
+.vision-area .vision-grid:nth-child(3){
+    grid-row:2/4;
+    grid-column:1/4;
+    height: 30px;
+}
+.vision-area .vision-grid:nth-child(4){
+    grid-row:3/4;
+    grid-column:1/4;
+    height: 30px;
+}
 
-/*Our team section, setup is the same as services, so can be reused here with some minor edits to make up for different headings*/
+/*Our team section, setup is the same as services, so can be reused here with some minor edits to make up for different headings and spacing*/
 .team-title{
     margin: 10px;
     margin-top: 35px;
+    padding-top: 40px;
 }
 
 .team-section{
@@ -327,6 +382,69 @@ nav form button{
     border-top: 3px solid #c78c06;
     margin: 15px;
 }
+
+
+.contact-area{
+    margin: 10px;
+}
+.contact-content{
+    margin: 10px;
+}
+
+.textbox_small{
+    width: 95%;
+}
+.textbox_large{
+    width: 95%;
+    height: 150px;
+}
+.contact-area h2{
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+.contact-area button{
+    color: #c78c06;
+    background-color: #222;
+    border-style: none;
+    height: 30px;
+    width: 50px;
+    font-size: 1.05rem;
+}
+
+.hours{
+    margin: 10px;
+    padding-top: 10px;
+}
+.hours table, th, td{
+    border: 1px solid;
+}
+.hours table{
+    width: 95%;
+    margin: 10px;
+}
+.hours th, td{
+    height: 40px;
+}
+.hours th{
+    background-color: #ffe6ac;
+}
+.hours td{
+    padding: 10px;
+    padding-bottom: 0px;
+}
+.map-box{
+    margin: 10px;
+}
+.map-box h3{
+    padding: 10px;
+    font-weight: bold;
+}
+.map iframe{
+    width: 95%;
+    height: 350px;
+}
+
+
 
 @media screen and (min-width:760px){
      
