@@ -444,7 +444,13 @@ nav form button{
     height: 350px;
 }
 
-
+footer{
+    background-color: #222;
+}
+footer p{
+    color: #c78c06;
+    padding: 20px;
+}
 
 @media screen and (min-width:760px){
      
