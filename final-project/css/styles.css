@@ -55,11 +55,99 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+h2{
+    font-size: 45px;
+    font-weight: bold;
+}
 .wrapper{
     max-width: 1200px;
     height: auto;
+    margin: auto;
 }
 
 .navigation{
-    display:flex
+    display:grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+}
+.nav-image{
+    background-color: #c78c06;
+    padding: 0px;
+    
+}
+nav a{
+    text-decoration: none;
+    color: #c78c06;
+    text-align: center;
+}
+nav ul li{
+    padding: 25px;
+}
+.nav-text{
+    background-color: #222;
+    text-align: center;
+    
+}
+
+nav ul li:nth-child(1){
+    background-color: #c78c06;
+}
+.nav-home{
+    color: #222;
+}
+
+nav form button{
+    color: #c78c06;
+    background-color: #222;
+    border-style: solid;
+    border-color: #c78c06;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.nav-search input{
+    height: 25px;
+    width: 85%;
+}
+
+
+
+.title-text{
+    background: rgba(34, 34, 34, 0.75);
+    color: white;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-height: 300px;
+    padding: 50px;
+    margin: 25px;
+}
+.title-text p{
+    margin: 25px;
+    margin-left: 0;
+}
+.title-text h1{
+}
+.title-text button{
+    color:#222;
+    background-color: #c78c06;
+    border-style: none;
+    height: 75px;
+    width: 250px;
+    font-size: 20px;
+}
+
+.about-content{
+    background-color: #ffe6ac;
+
+}
+
+@media screen and (min-width:760px){
+     
 }
