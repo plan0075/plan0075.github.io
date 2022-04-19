@@ -8,27 +8,34 @@
     <link rel="stylesheet" href="css/styles.css">
     <!--Font awesome kit script-->
     <script src="https://kit.fontawesome.com/5ba54ca48b.js" crossorigin="anonymous"></script>
+    <!--Font import code-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
         <!--navigation and header content in one zone as per marked mockup for later use of grid / flex-->
         <header id="home" class="header">
             <nav class="navigation">
-                <div>
+                <div class="nav-image">
                     <img src="images/logo.png" alt="company logo, three stars over a yellow-gold background">
                 </div>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <form action="index.html" method="get">
-                    <input type="text" name="searchbar" id="searchbar" class="searchbar" value="Search">
-                </form>
+                <div class="nav-text">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-search">
+                    <form action="index.html" method="get">
+                        <input type="text" name="searchbar" id="searchbar" class="searchbar" value="Search">
+                    </form>
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-
+                </div>
             </nav>
         
             <!--Creates section for Title box uses image h1 and paragraphs-->
@@ -58,10 +65,10 @@
             <!-- Similar to about section, with areas split into seperate divs for layout styling.-->
             <section id="services">
                 <div class="services">
-                    <div class="services-area">
+                    <div class="services-title">
                         <h2>Our Services</h2>
                     </div>
-                    <div class="services-area">
+                    <div class="services-digigtal">
                         <div>
                             <img src="images/digital.jpg" alt="picture of a powered on laptop and user holding a phone">
                         </div>
@@ -71,7 +78,7 @@
                             <button type="submit">Digital Plans<i class="fa-solid fa-caret-right"></i></button>
                         </div>
                     </div>
-                    <div class="services-area">
+                    <div class="services-marketing">
                         <div>
                             <img src="images/marketing.jpg" alt="picture of a powered on laptop along on a desk">
                         </div>
@@ -81,7 +88,7 @@
                             <button type="submit">Marketing Plans<i class="fa-solid fa-caret-right"></i></button>
                         </div>
                     </div>
-                    <div class="services-area">
+                    <div class="services-video">
                         <div>
                             <img src="images/video.jpg" alt="picture of a person holding phone with video logo on screen">
                         </div>
@@ -91,7 +98,7 @@
                             <button type="submit">Video Plans<i class="fa-solid fa-caret-right"></i></button>
                         </div>
                     </div>
-                    <div class="services-area">
+                    <div class="services-web">
                         <div>
                             <img src="images/web.jpg" alt="picture of a phone with a website displayed on the screen">
                         </div>
@@ -101,7 +108,7 @@
                             <button type="submit">Web Plans<i class="fa-solid fa-caret-right"></i></button>
                         </div>
                     </div>
-                    <div class="services-area">
+                    <div class="services-print">
                         <div>
                             <img src="images/print.jpg" alt="picture of a row of newspaper vending machines">
                         </div>
@@ -114,7 +121,7 @@
                 </div>
             </section>
             <section>
-                <div>
+                <div class="vision-area">
                     <img src="images/vision.jpg" alt="picture of paper boats on a solid surfaceS">
                     <h3>Our Vision</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit quisquam maiores doloribus dolor magnam reprehenderit ad nisi, culpa autem explicabo accusantium quae tempore eligendi repudiandae quos? Incidunt aut et voluptas?</p>
@@ -154,12 +161,12 @@
                         <form action="index.html" method="get">
                         <!--Divs for text boxes-->
                         <div>
-                        <label for="name">Full Name</label>
-                        <input type="text" name="name" id="name" class="textbox_small">
+                            <label for="name">Full Name</label>
+                            <input type="text" name="name" id="name" class="textbox_small">
                         </div>
                         <div>
-                        <label for="email">Email</label>
-                        <input type="text" name="email" id="email" class="textbox_small">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" class="textbox_small">
                         </div>
                         <div>
                             <label for="message">Message</label>
